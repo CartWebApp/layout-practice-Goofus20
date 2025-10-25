@@ -1,49 +1,102 @@
-.dropdown {
-      position: relative;
-      display: inline-block;
-      left:45%;
-    }
-    .dropbtn {
-      padding: 10px 20px;
-      cursor: pointer;
-    }
-    .dropdown-content {
-      display: none;
-      position: absolute;
-      background: #fff;
-      min-width: 160px;
-      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-      z-index: 1000;
-    }
-    .dropdown-content a {
-      display: block;
-      padding: 12px 16px;
-      text-decoration: none;
-      color: black;
-    }
-    .dropdown-content a:hover {
-      background-color: #f1f1f1;
-    }
-    .dropdown:hover .dropdown-content {
-      display: block;
-    }
-    * {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body {
-  font-family: Arial, sans-serif;
+/* Navbar container */
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #46555e;
+  color: white;
+  padding: 1rem 2rem;
+}
+ .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+.nav-links a {
+  display:inline-block;
+  padding: 10px 20px;
+  border: 2px solid #ffffff;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  
 }
 
-.navbar {
-  background-color: #11a0af;
-  color: #ffffff;
-  display: flex;
-  padding: 10px 20px;
+.nav-links a:hover {
+  background-color:#586b77;
 }
-.signin {
-    display:flex;
-    justify-content:flex-end;
+.image-container {
+  position: relative;        
+  display: inline-block;
+}
+
+.image-container img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 50%;                 
+  left: 50%;                
+  transform: translate(-50%, -50%); 
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+.subtitle {
+  font-size: 1.2rem;
+  color: #ffffff;
+  margin-top: -10px;
+  text-align: center;
+}
+.headline {
+  display:flex;
+  flex-direction:row;
+  justify-content:space-around;
+  margin:15px;
+}
+.headline1 {
+  display:inline-block;
+  position: relative;
+  padding:0px;
+  background-color: rgb(231, 231, 231);
+  max-width: 250px;
+}
+.headline2 {
+  display:inline-block;
+  position: relative;
+  padding:0px;
+  background-color: rgb(231, 231, 231);
+  max-width: 250px;
+}
+.headline3 {
+  display:inline-block;
+  position: relative;
+  padding:0px;
+  background-color: rgb(231, 231, 231);
+  max-width: 250px;
+}
+.column1 {
+ display:inline-block;
+  position: relative;
+  padding:0px;
+  background-color: rgb(231, 231, 231);
+  max-width: 400px;
+}
+.column2 {
+ display:inline-block;
+  position: relative;
+  padding:0px;
+  background-color: rgb(231, 231, 231);
+  max-width: 400px;
 }
